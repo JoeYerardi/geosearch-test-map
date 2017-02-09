@@ -28,9 +28,12 @@
 	// add geocoder with Mapzen api key to map
 	L.control.geocoder('search-m7ga4cs', {
 	  params: {
-	  	// Use only OpenStreetMap geocoding database
+	  	// use only OpenStreetMap geocoding database
 	    sources: 'osm',
-	    // Search only within San Diego
+	    // search bar is expanded by default
+	    expanded: true,
+		placeholder: 'Enter an address',
+	    // search only within San Diego
 	    'boundary.rect.min_lat': 32.534779, 
 	    'boundary.rect.min_lon': -117.309807, 
 	    'boundary.rect.max_lat': 33.11425, 
