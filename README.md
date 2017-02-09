@@ -1,2 +1,2 @@
 # geosearch-test-map
-A test of the leaflet-geosearch plugin
+A test of the mampzen leaflet-geocoder plugin
