@@ -26,7 +26,12 @@
 	}).addTo(map);
 
 	// add geocoder with mapzen api key to map
-	L.control.geocoder('search-m7ga4cs').addTo(map);
+	L.control.geocoder('search-m7ga4cs', {
+	  autocomplete: false,
+	  params: {
+	    sources: 'osm'
+	  }
+	}).addTo(map);
 	</script>
 </body>
 </html>
