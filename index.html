@@ -25,21 +25,17 @@
 		id: 'mapbox.streets'
 	}).addTo(map);
 
-	// add geocoder with Mapzen api key to map
+	// add Mapzen geocoder to map and set options
 	L.control.geocoder('search-m7ga4cs', {
 	  params: {
-	  	// use only OpenStreetMap geocoding database
 	    sources: 'osm',
-	    // search bar is expanded by default
 	    expanded: true,
-		placeholder: 'Enter an address',
-		title: 'Enter an address',
-		panToPoint: false,
-	    // search only within San Diego
 	    'boundary.rect.min_lat': 32.534779, 
 	    'boundary.rect.min_lon': -117.309807, 
 	    'boundary.rect.max_lat': 33.11425, 
-	    'boundary.rect.max_lon': -116.905716}
+	    'boundary.rect.max_lon': -116.905716},
+	    placeholder: 'Enter an address',
+	    panToPoint: false
 	}).addTo(map);
 	</script>
 </body>
