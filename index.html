@@ -26,7 +26,7 @@
 	}).addTo(map);
 
 	// add Mapzen geocoder to map and set options
-	L.control.geocoder('search-m7ga4cs', {
+	var geocoder = L.control.geocoder('search-m7ga4cs', {
 	  params: {
 	    sources: 'osm',
 	    'boundary.rect.min_lat': 32.534779, 
